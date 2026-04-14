@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="fpdf_title" data-i18n-type="html">FatturaPDF WP — AG CodeDev</title>
+  <meta name="description" content="Articles about WordPress, SEO, web development and digital products.">
+ 
+  <!-- Tuo CSS principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.ico" />
+
+  <!-- Font display per il blog -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/components.js" defer></script>
+
+ 
+</head>
+<body class="theme-dark">
+
+  <site-header></site-header>
+ 
+<main class="product-detail">
+  <!-- Hero: Value + Price + Primary CTA -->
+  <section class="product-hero">
+    <div class="container product-hero-inner">
+      <div class="product-hero-content">
+        <span class="product-badge">New Release</span>
+        <h1 data-i18n="fpdf_title" data-i18n-type="html">FatturaPDF WP</h1>
+        <p class="product-lead" data-i18n="fpdf_lead" data-i18n-type="html">Create professional PDF invoices, quotes, and receipts directly within your WordPress dashboard, intuitively.</p>
+        
+        <div class="product-price-block">
+          <span class="product-price" data-i18n="fpdf_price">€22,61</span>
+          <span class="product-price-note" data-i18n="fpdf_price_note" data-i18n-type="html">one-time payment • lifetime updates</span>
+        </div>
+        
+        <div class="product-cta-group">
+          <a href="https://payhip.com/buy?s=1&qty%5BdKAPj%5D=1&cart_links%5B%5D=dKAPj" class="btn btn-primary btn-lg" target="_blank" rel="noopener" data-i18n="fpdf_cta_primary" data-i18n-type="html">Get Plugin Now →</a>
+          <a href="#features" class="btn btn-secondary" data-i18n="fpdf_cta_secondary" data-i18n-type="html">See Features ↓</a>
+        </div>
+        
+        <div class="trust-badges">
+          <span>✓ 30-day money-back</span>
+          <span>✓ Instant download</span>
+          <span>✓ 100% local data</span>
+          <span>✓ No subscription</span>
+        </div>
+      </div>
+      
+      <div class="product-gallery">
+        <button class="gallery-trigger" aria-label="View more screenshots">
+          <img src="../img/editor.png" alt="FatturaPDF WP Editor Preview" class="product-screenshot" loading="eager"/>
+          <span class="gallery-badge">🔍 Click to expand</span>
+        </button>
+        <!-- Lightbox markup -->
+        <div class="lightbox" id="product-lightbox" role="dialog" aria-modal="true" hidden>
+          <button class="lightbox-close" aria-label="Close">&times;</button>
+          <img src="../img/editor.png" alt="Screenshot 1" class="lightbox-image" id="lightbox-main"/>
+          <button class="lightbox-nav lightbox-prev" aria-label="Previous">❮</button>
+          <button class="lightbox-nav lightbox-next" aria-label="Next">❯</button>
+          <div class="lightbox-thumbs">
+            <button class="thumb active" data-src="../img/editor.png" data-alt="Invoice editor"><img src="../img/editor.png" alt="Thumb 1"/></button>
+            <button class="thumb" data-src="../img/fattura_preview.png" data-alt="Theme preview"><img src="../img/fattura_preview.png" alt="Thumb 2"/></button>
+            <button class="thumb" data-src="../img/impostazioni_fpdf.png" data-alt="Generated PDF"><img src="../img/impostazioni_fpdf.png" alt="Thumb 3"/></button>
+          </div>
+          <span class="lightbox-counter"><span id="lightbox-current">1</span>/<span id="lightbox-total">3</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem/Solution -->
+  <section class="product-section">
+    <div class="container">
+      <h2 data-i18n="fpdf_problem_title" data-i18n-type="html">Why FatturaPDF WP?</h2>
+      <div class="problem-solution-grid">
+        <div class="problem-card">
+          <span class="problem-icon">⏳</span>
+          <h3 data-i18n="fpdf_problem_1_title" data-i18n-type="html">Manual invoicing wastes time</h3>
+          <p data-i18n="fpdf_problem_1_desc" data-i18n-type="html">Switching between Word, Excel, or external accounting tools breaks your workflow. Errors pile up, branding gets inconsistent.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">☁️</span>
+          <h3 data-i18n="fpdf_problem_2_title" data-i18n-type="html">Cloud tools cost monthly & risk data</h3>
+          <p data-i18n="fpdf_problem_2_desc" data-i18n-type="html">Subscriptions add up. External servers mean your client data leaves your control. GDPR compliance becomes complex.</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-icon">✅</span>
+          <h3 data-i18n="fpdf_solution_title" data-i18n-type="html">Professional invoices, 100% inside WordPress</h3>
+          <p data-i18n="fpdf_solution_desc" data-i18n-type="html">FatturaPDF WP gives you a WYSIWYG editor, pre-filled templates, and instant PDF generation. Keep data on your server, pay once, brand everything perfectly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="product-section bg-alt">
+    <div class="container">
+      <h2 data-i18n="fpdf_features_title" data-i18n-type="html">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🖊️</span>
+          <h3 data-i18n="fpdf_feat1_title" data-i18n-type="html">Intuitive WYSIWYG Editor</h3>
+          <p data-i18n="fpdf_feat1_desc" data-i18n-type="html">Edit content directly in the visual editor. See exactly how the final PDF will look before exporting.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💾</span>
+          <h3 data-i18n="fpdf_feat2_title" data-i18n-type="html">Pre-filled Company Details</h3>
+          <p data-i18n="fpdf_feat2_desc" data-i18n-type="html">Save VAT, address, and company info once. Auto-injected into every new invoice or quote.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎨</span>
+          <h3 data-i18n="fpdf_feat3_title" data-i18n-type="html">4 Themes + Logo Upload</h3>
+          <p data-i18n="fpdf_feat3_desc" data-i18n-type="html">Switch between professional color themes and upload your logo via WordPress media library.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🇮🇹</span>
+          <h3 data-i18n="fpdf_feat4_title" data-i18n-type="html">Italian Format Optimized</h3>
+          <p data-i18n="fpdf_feat4_desc" data-i18n-type="html">Layout designed for Italian tax standards (VAT, P.IVA, breakdown fields). Ready for EU freelancers & agencies.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🔒</span>
+          <h3 data-i18n="fpdf_feat5_title" data-i18n-type="html">No Cloud, No Subscription</h3>
+          <p data-i18n="fpdf_feat5_desc" data-i18n-type="html">All data stays on your server. One payment. Zero hidden fees. Full GDPR control.</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⚡</span>
+          <h3 data-i18n="fpdf_feat6_title" data-i18n-type="html">Instant Download</h3>
+          <p data-i18n="fpdf_feat6_desc" data-i18n-type="html">Generate, preview, and download high-quality PDFs in seconds. No external processing delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="product-section">
+    <div class="container">
+      <h2 data-i18n="fpdf_how_title" data-i18n-type="html">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <h3 data-i18n="fpdf_step1_title" data-i18n-type="html">Install & Configure</h3>
+          <p data-i18n="fpdf_step1_desc" data-i18n-type="html">Upload via WP admin. Enter company details & pick a theme. Takes &lt;2 minutes.</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <h3 data-i18n="fpdf_step2_title" data-i18n-type="html">Edit Visually</h3>
+          <p data-i18n="fpdf_step2_desc" data-i18n-type="html">Use the WYSIWYG panel to adjust items, taxes, discounts, and client info in real-time.</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <h3 data-i18n="fpdf_step3_title" data-i18n-type="html">Export & Send</h3>
+          <p data-i18n="fpdf_step3_desc" data-i18n-type="html">Download the polished PDF instantly. Attach to emails or print directly from WordPress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="product-section bg-alt">
+    <div class="container">
+      <h2 data-i18n="fpdf_trust_title" data-i18n-type="html">Built For Speed & Control</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <span class="trust-stat" data-i18n="fpdf_trust_stat1" data-i18n-type="html">&lt;30s</span>
+          <span class="trust-label" data-i18n="fpdf_trust_label1" data-i18n-type="html">Avg. generation</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-stat" data-i18n="fpdf_trust_stat2" data-i18n-type="html">0</span>
+          <span class="trust-label" data-i18n="fpdf_trust_label2" data-i18n-type="html">Monthly fees</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-stat" data-i18n="fpdf_trust_stat3" data-i18n-type="html">100%</span>
+          <span class="trust-label" data-i18n="fpdf_trust_label3" data-i18n-type="html">Server-side data</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="product-section">
+    <div class="container">
+      <h2 data-i18n="fpdf_faq_title" data-i18n-type="html">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+        <details>
+          <summary data-i18n="fpdf_faq1_q" data-i18n-type="html">Does this work with any WordPress theme?</summary>
+          <p data-i18n="fpdf_faq1_a" data-i18n-type="html">Yes. The plugin runs entirely in the WordPress admin dashboard and uses native WP APIs. Theme conflicts are extremely rare.</p>
+        </details>
+        <details>
+          <summary data-i18n="fpdf_faq2_q" data-i18n-type="html">Can I generate Italian Electronic Invoices (Fattura Elettronica SDI)?</summary>
+          <p data-i18n="fpdf_faq2_a" data-i18n-type="html">No. This plugin generates professional PDF documents (invoices, quotes, receipts). It is NOT compliant with the Italian SDI electronic invoicing system required by law. Use dedicated accounting software for SDI compliance.</p>
+        </details>
+        <details>
+          <summary data-i18n="fpdf_faq3_q" data-i18n-type="html">How do I upload my company logo?</summary>
+          <p data-i18n="fpdf_faq3_a" data-i18n-type="html">Use the "Upload Logo" button inside the invoice creation panel. It integrates with WordPress's native media library for secure, optimized handling.</p>
+        </details>
+        <details>
+          <summary data-i18n="fpdf_faq4_q" data-i18n-type="html">Is technical support available?</summary>
+          <p data-i18n="fpdf_faq4_a" data-i18n-type="html">Yes. For installation, setup, or usage questions, contact me via the support form. I respond within 24h with actionable guidance.</p>
+        </details>
+        <details>
+          <summary data-i18n="fpdf_faq5_q" data-i18n-type="html">Is this suitable for non-Italian users?</summary>
+          <p data-i18n="fpdf_faq5_a" data-i18n-type="html">Absolutely. While optimized for Italian tax formats, the core features (WYSIWYG editor, PDF generation, themes, logo upload) are universal. You can manually adapt default text fields to match your country's requirements.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="product-cta-section">
+    <div class="container">
+      <h2 data-i18n="fpdf_final_cta_title" data-i18n-type="html">Stop Juggling Multiple Tools. Invoice Like a Pro.</h2>
+      <p data-i18n="fpdf_final_cta_desc" data-i18n-type="html">Get instant access to a clean, fast, and fully local PDF generator. One payment. Lifetime updates. 30-day refund guarantee.</p>
+      <div class="final-cta-group">
+        <a href="https://payhip.com/buy?s=1&qty%5BdKAPj%5D=1&cart_links%5B%5D=dKAPj" class="btn btn-primary btn-xl" target="_blank" rel="noopener" data-i18n="fpdf_cta_final" data-i18n-type="html">Get FatturaPDF WP – €19,00 →</a>
+        <p class="cta-note" data-i18n="fpdf_cta_note" data-i18n-type="html">✓ Instant download • ✓ No subscription • ✓ 30-day refund</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <site-footer></site-footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

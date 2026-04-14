@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="nav-about" data-i18n-type="html">About Us</title>
+  <meta name="description" content="Descrizione breve dell'articolo...">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style_blog.css">
+
+  <!-- i18n -->
+  <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+
+  <!-- Web Components -->
+  <script src="../assets/js/components.js" defer></script>
+</head>
+<body class="theme-dark">
+
+  <!-- HEADER ▸ un solo tag da ora in poi -->
+  <site-header></site-header>
+
+  <!-- Contenuto specifico dell'articolo -->
+  <main id="about" class="about-page">
+  <section class="about-hero">
+    <h1 data-i18n="about_title" data-i18n-type="html">We Build Digital Solutions That Scale</h1>
+    <p class="lead" data-i18n="about_intro" data-i18n-type="html">At AG CodeDev, we’re a team of developers, strategists, and automation specialists focused on turning complex business challenges into clean, high-performing digital products. No fluff. No broken promises. Just measurable results.</p>
+  </section>
+
+  <section class="about-values">
+    <div class="value-card">
+      <div class="value-icon">🎯</div>
+      <h3 data-i18n="val1_title" data-i18n-type="html">Precision Over Promises</h3>
+      <p data-i18n="val1_desc" data-i18n-type="html">We ship exactly what we scope. Every line of code is documented, tested, and built for production from day one.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🔍</div>
+      <h3 data-i18n="val2_title" data-i18n-type="html">Transparency First</h3>
+      <p data-i18n="val2_desc" data-i18n-type="html">Clear timelines, fixed pricing, and weekly progress updates. You’re never left guessing about your project’s status.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🚀</div>
+      <h3 data-i18n="val3_title" data-i18n-type="html">Future-Proof Architecture</h3>
+      <p data-i18n="val3_desc" data-i18n-type="html">We don’t apply quick patches. We engineer scalable, secure systems designed to grow with your business.</p>
+    </div>
+  </section>
+
+  <section class="about-metrics">
+    <div class="metric-box"><span class="metric-num" data-i18n="met1_val">50+</span><span class="metric-label" data-i18n="met1_lab" data-i18n-type="html">Projects Delivered</span></div>
+    <div class="metric-box"><span class="metric-num" data-i18n="met2_val">98%</span><span class="metric-label" data-i18n="met2_lab" data-i18n-type="html">Client Retention</span></div>
+    <div class="metric-box"><span class="metric-num" data-i18n="met3_val">&lt;24h</span><span class="metric-label" data-i18n="met3_lab" data-i18n-type="html">Avg. Response</span></div>
+    <div class="metric-box"><span class="metric-num" data-i18n="met4_val">100%</span><span class="metric-label" data-i18n="met4_lab" data-i18n-type="html">Code Ownership</span></div>
+  </section>
+
+  <section class="about-cta">
+    <p data-i18n="about_cta_text" data-i18n-type="html">Ready to turn your vision into a scalable, high-converting reality?</p>
+    <a href="../index.html#contact" class="btn btn-primary btn-lg" data-i18n="about_cta_btn" data-i18n-type="html">Start Your Project →</a>
+  </section>
+</main>
+
+  <!-- FOOTER ▸ un solo tag da ora in poi -->
+  <site-footer></site-footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

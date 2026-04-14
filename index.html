@@ -2,65 +2,596 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG CodeDev</title>
-    <style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f8f9fa;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #333;
-        text-align: center;
-    }
-    .container {
-        padding: 20px;
-    }
-    .loader {
-        border: 8px solid #f3f3f3;
-        border-top: 8px solid #3498db;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        animation: spin 2s linear infinite;
-        margin: 0 auto 20px;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-    p {
-        font-size: 1.1rem;
-        color: #666;
-    }
-    .badge {
-        background: #3498db;
-        color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site-title">AG CodeDev | Professional Development Services</title>
+  <meta name="description"
+    content="High-quality WordPress plugins, custom software development, and digital solutions. Fast, scalable, professional." />
+    <meta name="google-site-verification" content="Z3rqNMEBVQ8pdf3JmLtRRRZho6QzNc7qQEdtjCd8MRo" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="AG CodeDev | Dev Services" />
+  <meta property="og:description"
+    content="Professional digital products and development services. Built for performance, designed for conversion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://giovyangy.github.io" />
+  <meta property="og:image" content="https://giovyangy.github.io/assets/img/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Multi-language lib -->
+  <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+
+  <!-- Payhip Embed (loaded only on product pages) -->
+  <!-- <script src="https://payhip.com/js/embed.js" defer></script> -->
+  <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
 </head>
-<body>
-<div class="container">
-    <div class="loader"></div>
-    <div class="badge">Sito in Aggiornamento</div>
-    <h1>Working in Progress</h1>
-    <p>We're working to provide a better experience.
-<br>Come back soon!</p>
-</div>
+
+<body class="theme-dark">
+
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="/" class="logo">
+        <span class="logo-icon"><img src="/img/logo_full.png " alt="AG CodeDev Logo" /></span>
+
+      </a>
+
+      <nav class="nav">
+        <div class="nav-dropdown">
+          <a href="services/index.html" class="nav-dropdown-trigger" data-i18n="nav-services"
+            data-i18n-type="html">Services <span class="dropdown-arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="services/index.html#ai-integrations" data-i18n="nav_ai" data-i18n-type="html">AI Integrations</a>
+            <a href="services/index.html#custom-development" data-i18n="nav_custom" data-i18n-type="html">Custom
+              Development</a>
+            <a href="services/index.html#site-optimization" data-i18n="nav_opt" data-i18n-type="html">Site
+              Optimization</a>
+            <a href="services/index.html#wordpress-plugins" data-i18n="nav_wp" data-i18n-type="html">WordPress
+              Plugins</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#products" class="nav-dropdown-trigger" data-i18n="nav-products" data-i18n-type="html">Products<span
+              class="dropdown-arrow">▼</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="/products/plugin_health_check.html" data-i18n="phc_title" data-i18n-type="html">Plugin Health
+              Check</a>
+            <a href="/products/fatturapdf_wp.html" data-i18n="fpdf_title" data-i18n-type="html">FatturaPDF WP</a>
+            <a href="/products/e-commerce_n8n.html" data-i18n="wfec-title" data-i18n-type="html">WooCommerce Automation
+              n8n</a>
+          </div>
+        </div>
+        <a href="#tech-stack" data-i18n="nav-technologies" data-i18n-type="html">Technologies & Tools</a>
+        <a href="about_us/index.html" data-i18n="nav-about" data-i18n-type="html">About Us</a>
+        <a href="#contact" data-i18n="nav-contact" data-i18n-type="html">Contact</a>
+
+      </nav>
+
+      <!-- Language Selector Dropdown -->
+      <div class="dropdown">
+        <!-- Pulsante principale del dropdown -->
+        <button class="dropdown-btn" aria-haspopup="true" aria-expanded="false" id="lang-dropdown-btn">
+          <span id="current-lang-display">EN</span> <!-- Mostra la lingua attuale -->
+          <span class="dropdown-arrow">▼</span>
+        </button>
+        <!-- Menu nascosto del dropdown -->
+        <div class="dropdown-menu" id="lang-dropdown-menu">
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="it" aria-label="Italiano">IT</button>
+          <button class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        </div>
+      </div>
+
+      <a href="#products" class="btn btn-primary" data-i18n="cta-header" data-i18n-type="html">View Products</a menu
+        toggle -->
+      <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 id="hero-title" data-i18n="hero-title" data-i18n-type="html">Build Faster. Sell Smarter.<br><span
+            class="highlight">Dev Services Software, APP and Website</span></h1>
+        <p id="hero-subtitle" data-i18n="hero-subtitle" data-i18n-type="html">High-converting digital products and
+          custom development for freelancers, agencies, and businesses. Scalable code. Real results.</p>
+
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary" data-i18n="cta-primary" data-i18n-type="html">Explore Products</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="cta-secondary" data-i18n-type="html">Get a Quote</a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="trust-badges">
+          <span data-i18n="trust-badge1" data-i18n-type="html">✓ 30-day money-back</span>
+          <span data-i18n="trust-badge2" data-i18n-type="html">✓ Instant delivery</span>
+          <span data-i18n="trust-badge3" data-i18n-type="html">✓ GDPR compliant</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-preview">
+          <pre><code class="language-php">
+// AG CodeDev Plugin Snippet
+add_action('init', function() {
+  // Optimized, secure, scalable
+  if (user_can('manage_options')) {
+    render_dashboard();
+  }
+});
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services-title" data-i18n-type="html">What I Build</h2>
+      <p class="section-subtitle" data-i18n="services-subtitle" data-i18n-type="html">End-to-end digital solutions, from
+        idea to deployment.<a href="services/index.html" class="link-arrow" data-i18n="svc4-cta"
+          data-i18n-type="html">See more →</a></p>
+
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+
+        <article class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3 data-i18n="svc4-title" data-i18n-type="html">AI Integrations</h3>
+          <p data-i18n="svc4-desc" data-i18n-type="html">Embed intelligent features: chatbots, content generation,
+            automation. Practical AI, no hype.</p>
+          <a href="services/index.html" class="link-arrow" data-i18n="svc4-cta" data-i18n-type="html">Explore AI options
+            →</a>
+        </article>
+
+
+
+        <!-- Service Card 2 -->
+        <article class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3 data-i18n="svc2-title" data-i18n-type="html">Custom Development</h3>
+          <p data-i18n="svc2-desc" data-i18n-type="html">Web apps, desktop tools, automations. Python, JS, PHP – built
+            to solve your specific workflow problems.</p>
+          <a href="#contact" class="link-arrow" data-i18n="svc2-cta" data-i18n-type="html">Discuss your project →</a>
+        </article>
+
+        <!-- Service Card 3 -->
+        <article class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3 data-i18n="svc3-title" data-i18n-type="html">Site Optimization</h3>
+          <p data-i18n="svc3-desc" data-i18n-type="html">SEO, speed, UX audits. Turn slow, outdated sites into
+            high-converting assets.</p>
+          <a href="#contact" class="link-arrow" data-i18n="svc3-cta" data-i18n-type="html">Get an audit →</a>
+        </article>
+
+        <!-- Service Card 4 -->
+        <article class="service-card">
+          <div class="service-icon">🔌</div>
+          <h3 data-i18n="svc1-title" data-i18n-type="html">WordPress Plugins</h3>
+          <p data-i18n="svc1-desc" data-i18n-type="html">Custom plugins built for performance, security, and
+            scalability. Clean code, documented, ready for production.</p>
+          <a href="#products" class="link-arrow" data-i18n="svc1-cta" data-i18n-type="html">View plugins →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section products bg-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="products-title" data-i18n-type="html">Digital Products</h2>
+      <p class="section-subtitle" data-i18n="products-subtitle" data-i18n-type="html">Ready-to-use tools. Instant
+        download. Lifetime updates.</p>
+
+      <div class="products-grid">
+        <!-- Product Card 1 (Payhip integration placeholder) -->
+
+        <article class="product-card">
+          <div class="product-badge">New</div>
+          <img src="/img/check.png" alt="Plugin Preview" class="product-img" loading="lazy" />
+          <div class="product-content">
+            <h3 data-i18n="prod1-title" data-i18n-type="html">Plugin Health Check</h3>
+            <p data-i18n="prod1-desc" data-i18n-type="html">Keep Your WordPress Site Healthy: Identify and Manage
+              Outdated Plugins Effortlessly.
+              Plugin Health Check is a vital WordPress plugin designed to help administrators maintain a secure and
+              performant website by automatically monitoring the health of installed plugins.</p>
+            <div class="product-price">€5,95 <span class="price-note">one-time</span></div>
+            <!-- Payhip Button Placeholder -->
+            <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=KtIT0&qty%5BKtIT0%5D=1"
+              class="btn btn-primary btn-block" data-theme="none" data-product="KtIT0" data-i18n="prod1-cta" target="_blank">Buy Now</a>
+            <ul class="product-features">
+              <li data-i18n="feat2" data-i18n-type="html">✓ GDPR compliant</li>
+              <li data-i18n="feat4" data-i18n-type="html">✓ One-click setup</li>
+              <li data-i18n="feat5" data-i18n-type="html">✓ Works with any theme</li>
+            </ul>
+            <a href="products/plugin_health_check.html" class="link-arrow" data-i18n="svc5-cta"
+              data-i18n-type="html">See more →</a>
+          </div>
+        </article>
+
+
+        <!-- Product Card: FatturaPDF WP -->
+        <article class="product-card">
+          <div class="product-badge">Bestseller</div>
+          <img src="/img/editor.png" alt="FatturaPDF WP Preview" class="product-img" loading="lazy" />
+          <div class="product-content">
+            <h3 data-i18n="fpdf_title" data-i18n-type="html">FatturaPDF WP</h3>
+            <p data-i18n="fpdf_lead" data-i18n-type="html">Create professional PDF invoices, quotes, and receipts
+              directly within your WordPress dashboard, intuitively.</p>
+            <div class="product-price">€22,61 <span class="price-note">one-time</span></div>
+
+            <!-- Payhip Button -->
+            <a href="https://payhip.com/buy?s=1&qty%5BdKAPj%5D=1&cart_links%5B%5D=dKAPj"
+              class="btn btn-primary btn-block" data-theme="none" data-product="YOUR_ID"
+              data-i18n="fpdf_cta_primary" target="_blank">Buy Now</a>
+
+            <ul class="product-features">
+              <li data-i18n="fpdf_feat1_title" data-i18n-type="html">✓ WYSIWYG Editor</li>
+              <li data-i18n="fpdf_feat5_title" data-i18n-type="html">✓ No subscription</li>
+              <li data-i18n="fpdf_feat6_title" data-i18n-type="html">✓ Instant download</li>
+            </ul>
+
+            <!-- Link to product detail page -->
+            <a href="products/fatturapdf_wp.html" class="link-arrow" data-i18n="fpdf_see_more" data-i18n-type="html">See
+              more →</a>
+          </div>
+        </article>
+
+        <!-- Product Card: n8n WooCommerce Order Automation -->
+        <article class="product-card">
+          <div class="product-badge">New</div>
+          <img src="/img/workflow_home.png" alt="n8n Workflow Preview" class="product-img" loading="lazy" />
+          <div class="product-content">
+            <h3 data-i18n="wfec_title" data-i18n-type="html">n8n WooCommerce Order Automation</h3>
+            <p data-i18n="wfec_desc" data-i18n-type="html">Stop manually tracking orders. Auto-sync to Sheets/Airtable,
+              notify via Slack/Telegram, and handle errors automatically. Zero code. Setup in &lt;10 min.</p>
+            <div class="product-price">€79,73 <span class="price-note">one-time</span></div>
+
+            <!-- Payhip Button Placeholder -->
+            <a href="https://payhip.com/buy?s=1&cart_links%5B%5D=LhY0M&qty%5BLhY0M%5D=1"
+              class="btn btn-primary btn-block" data-theme="none" data-product="dKAPj" data-i18n="wfec_cta" target="_blank">Buy Now</a>
+
+            <ul class="product-features">
+              <li data-i18n="wfec_feat1" data-i18n-type="html">✓ Google Sheets or Airtable</li>
+              <li data-i18n="wfec_feat2" data-i18n-type="html">✓ Slack or Telegram alerts</li>
+              <li data-i18n="wfec_feat3" data-i18n-type="html">✓ Multilingual setup guide</li>
+            </ul>
+
+            <!-- Link to product detail page -->
+            <a href="products/e-commerce_n8n.html" class="link-arrow" data-i18n="wfec_see_more"
+              data-i18n-type="html">See more →</a>
+          </div>
+        </article>
+
+
+      </div>
+
+      <div class="products-cta">
+        <p data-i18n="products-cta-text" data-i18n-type="html">Need something custom? I build plugins, tools, Software,
+          Automations tailored to your
+          workflow.</p>
+        <a href="#contact" class="btn btn-outline" data-i18n="products-cta-btn" data-i18n-type="html">Request a Custom
+          Plugin</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Tech Stack / Technologies -->
+  <section id="tech-stack" class="section tech-stack-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="tech_title" data-i18n-type="html">Technologies & Tools</h2>
+      <p class="section-subtitle" data-i18n="tech_subtitle" data-i18n-type="html">Modern stack, production-ready
+        solutions. We use industry-standard tools to build scalable, secure, and high-performing digital products.</p>
+
+      <!-- Frontend -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_frontend" data-i18n-type="html">Frontend Development</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="HTML5">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-item" title="CSS3">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-item" title="JavaScript">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item" title="TypeScript">
+            <i class="devicon-typescript-plain colored"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="tech-item" title="React">
+            <i class="devicon-react-original colored"></i>
+            <span>React</span>
+          </div>
+          <div class="tech-item" title="Vue.js">
+            <i class="devicon-vuejs-plain colored"></i>
+            <span>Vue.js</span>
+          </div>
+          <div class="tech-item" title="Bootstrap">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="tech-item" title="Tailwind CSS">
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <span>Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_backend" data-i18n-type="html">Backend & APIs</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="Node.js">
+            <i class="devicon-nodejs-plain colored"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-item" title="Python">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="tech-item" title="PHP">
+            <i class="devicon-php-plain colored"></i>
+            <span>PHP</span>
+          </div>
+          <div class="tech-item" title="Java">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-item" title="C#">
+            <i class="devicon-csharp-plain colored"></i>
+            <span>C#</span>
+          </div>
+          <div class="tech-item" title="C">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
+          </div>
+          <div class="tech-item" title="Express">
+            <i class="devicon-express-original-wordmark"></i>
+            <span>Express</span>
+          </div>
+          <div class="tech-item" title="REST API">
+            <i class="devicon-postman-plain colored"></i>
+            <span>REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_database" data-i18n-type="html">Database & SQL</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="MySQL">
+            <i class="devicon-mysql-plain"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item" title="PostgreSQL">
+            <i class="devicon-postgresql-plain colored"></i>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item" title="MongoDB">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="tech-item" title="SQLite">
+            <i class="devicon-sqlite-plain colored"></i>
+            <span>SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CMS -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_cms" data-i18n-type="html">CMS & Platforms</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="WordPress">
+            <i class="devicon-wordpress-plain colored"></i>
+            <span>WordPress</span>
+          </div>
+          <div class="tech-item" title="Joomla">
+            <img src="https://cdn.simpleicons.org/joomla/005094" alt="Joomla" width="48" height="48" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span style=" font-weight:700; color:var(--text-muted);">Joomla</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_devops" data-i18n-type="html">DevOps & Version Control</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="Git">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="tech-item" title="GitHub">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item" title="GitLab">
+            <i class="devicon-gitlab-plain colored"></i>
+            <span>GitLab</span>
+          </div>
+          <div class="tech-item" title="Docker">
+            <i class="devicon-docker-plain colored"></i>
+            <span>Docker</span>
+          </div>
+          <div class="tech-item" title="Linux">
+            <i class="devicon-linux-plain"></i>
+            <span>Linux</span>
+          </div>
+          <div class="tech-item" title="Windows Server">
+            <i class="devicon-windows8-original colored"></i>
+            <span>Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEs -->
+      <div class="tech-category">
+        <h3 class="tech-category-title" data-i18n="tech_ide" data-i18n-type="html">Development Environment</h3>
+        <div class="tech-grid">
+          <div class="tech-item" title="VS Code">
+            <i class="devicon-vscode-plain colored"></i>
+            <span>VS Code</span>
+          </div>
+          <div class="tech-item" title="IntelliJ IDEA">
+            <i class="devicon-intellij-plain colored"></i>
+            <span>IntelliJ</span>
+          </div>
+          <div class="tech-item" title="PyCharm">
+            <i class="devicon-pycharm-plain colored"></i>
+            <span>PyCharm</span>
+          </div>
+          <div class="tech-item" title="PHPStorm">
+            <i class="devicon-phpstorm-plain colored"></i>
+            <span>PHPStorm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact bg-alt">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact-title" data-i18n-type="html">Let's Build Something Great</h2>
+      <p class="section-subtitle" data-i18n="contact-subtitle" data-i18n-type="html">Tell me about your project. I
+        respond within 24 hours.</p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Form (Formspree integration) -->
+        <form class="contact-form" action="https://formspree.io/f/xbdqljwn" method="POST">
+          <div class="form-group">
+            <label for="name" data-i18n="lbl-name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" data-i18n="lbl-name"
+              data-i18n-type="placeholder" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="lbl-email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com" data-i18n="lbl-email"
+              data-i18n-type="placeholder" />
+          </div>
+
+          <div class="form-group">
+            <label for="service" data-i18n="lbl-service">I'm interested in</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected data-i18n="lbl-service" data-i18n-type="html">Select a service</option>
+              <option value="plugin" data-i18n="opt-plugin" data-i18n-type="html">Custom WordPress Plugin</option>
+              <option value="website" data-i18n="opt-website" data-i18n-type="html">Website / E-commerce</option>
+              <option value="optimization" data-i18n="opt-optimization" data-i18n-type="html">SEO / Speed Optimization
+              </option>
+              <option value="automation" data-i18n="opt-automation" data-i18n-type="html">Automation / AI Integration
+              </option>
+              <option value="other" data-i18n="opt-other" data-i18n-type="html">Other / Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="lbl-message" data-i18n-type="html">Project Details</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Briefly describe your needs..."
+              data-i18n="lbl-message" data-i18n-type="placeholder"></textarea>
+          </div>
+
+          <!-- Honeypot spam protection -->
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form-submit" data-i18n-type="html">Send
+            Request</button>
+
+          <p class="form-note" data-i18n="form-note" data-i18n-type="html">✓ No spam. ✓ GDPR compliant. ✓ Response in
+            &lt;24h</p>
+
+        </form>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-icon"><img src="/img/logo_full.png " alt="AG CodeDev Logo" /></span>
+        </a>
+        <p data-i18n="footer-tagline" data-i18n-type="html">Professional digital products & development services. Built
+          to perform.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="ft-products" data-i18n-type="html">Products</h4>
+          <a href="products/e-commerce_n8n.html" data-i18n="ft-products-link3" data-i18n-type="html">WooCommerce n8n</a>
+          <a href="products/fatturapdf_wp.html" data-i18n="ft-products-link2" data-i18n-type="html">FatturaPDF WP</a>
+          <a href="products/plugin_health_check.html" data-i18n="ft-products-link1" data-i18n-type="html">Plugin Health Check</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft-services" data-i18n-type="html">Services</h4>
+          <a href="services/index.html#ai-integrations" data-i18n="title_ai_integration" data-i18n-type="html">AI Integrations</a>
+          <a href="services/index.html#custom-development" data-i18n="title_custom_dev" data-i18n-type="html">Custom Development</a>
+          <a href="services/index.html#wordpress-plugins" data-i18n="title_wp_plugin" data-i18n-type="html">WordPress Plugins</a>
+          <a href="services/index.html#site-optimization" data-i18n="title_site_opt" data-i18n-type="html">SEO Audit</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft-company" data-i18n-type="html">Company</h4>
+          <a href="about_us/index.html" data-i18n="ft-company-link1" data-i18n-type="html">About Us</a>
+          <a href="#contact" data-i18n="ft-contact" data-i18n-type="html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft-legal" data-i18n-type="html">Legal</h4>
+          <a href="about_us/privacy.html" data-i18n="ft-privacy" data-i18n-type="html">Privacy Policy</a>
+          <a href="about_us/terms.html" data-i18n="ft-terms" data-i18n-type="html">Terms of Service</a>
+          <!--  <a href="about_us/refund.html" data-i18n="ft-refund" data-i18n-type="html">Refund Policy</a>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> AG CodeDev. All rights reserved.</p>
+        <div class="footer-badges">
+          <span data-i18n="badge-ssl" data-i18n-type="html">🔒 SSL Secured</span>
+          <span data-i18n="badge-payhip" data-i18n-type="html">💳 Payhip Powered</span>
+          <span data-i18n="badge-languages" data-i18n-type="html">🌍 EN/IT/DE</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script per anno dinamico e eventuali funzioni specifiche del blog (separate da main.js se non servono ovunque) -->
+  <script>
+    // Script per anno dinamico (puoi anche spostarlo in un file separato se lo usi in molte pagine)
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+  </script>
+  <!-- Importante: Carica i18n.js prima di main.js se main.js dipende da elementi tradotti -->
+  <script src="../assets/js/main.js"></script>
 </body>
+
 </html>
